@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Museum of Arts and Culture</title>
+    <link rel="stylesheet" href="homePage.css">
+  <style>
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #f4b400;
+    cursor: pointer;
+  }
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+    @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    z-index: 9999;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;   
+    right: 0px;
+    background: #222;
+    border-radius: 0 0 8px 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color:#fff;
+    cursor: pointer;
+    background-color: #f4b400;
+    border-radius: 8px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+    }
+
+  </style>
+</head>
+<body>
+   <header>
+      <h1 style="color: #f4b400;">Art Museum</h1>
+      <nav class="navbar">
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collectionsPage.html">Collections</a></li>
+          <li><a href="exhibitsPage.html">Exhibitions</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+    <section class="page-header">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you.</p>
+    </section>
+
+    <section class="contact-form">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+ <footer>
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>The Museum of Art and Culture celebrates local and international creativity, showcasing sculptures, paintings, and abstract art that inspire culture and history.</p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collectionsPage.html">Collections</a></li>
+        <li><a href="exhibitsPage.html">Exhibitions</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: info@Museumofartandculture.com</p>
+      <p>Phone: +234 800 123 4567</p>
+      <p>Location: Lagos, Nigeria</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Museum of Art and Culture| Celebrating Culture & Creativity</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger-btn");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  });
+  </script>
+</body>
+</html>
