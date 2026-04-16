@@ -18,19 +18,19 @@ const Home = () => {
         <h3>Featured highlights</h3>
         <div className="grid">
           <article>
-            <img src="/benin-mask.jpeg" alt="Benin Mask" />
+            <img src="benin-mask.jpeg" alt="Benin Mask" />
             <h4>Art (Sculptures)</h4>
           </article>
           <article>
-            <img src="/monaLisa-painting.jpg" alt="Monalisa" />
+            <img src="monaLisa-painting.jpg" alt="Monalisa" />
             <h4>International Art</h4>
           </article>
           <article>
-            <img src="/broadwayBoogieWoogie-painting.jpeg" alt="Broadway Boogie Woogie" />
+            <img src="broadwayBoogieWoogie-painting.jpeg" alt="Broadway Boogie Woogie" />
             <h4>Abstract Art</h4>
           </article>
           <article>
-            <img src="/ife-bronze.jpeg" alt="Ife Bronze" />
+            <img src="ife-bronze.jpeg" alt="Ife Bronze" />
             <h4>Art (Sculptures)</h4>
           </article>
         </div>
