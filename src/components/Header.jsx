@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const location = useLocation();
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
@@ -20,11 +19,11 @@ const Header = () => {
           ☰
         </button>
         <ul className={`nav-links ${isNavOpen ? 'active' : ''}`} id="nav-links">
-          <li><Link to="/" onClick={() => setIsNavOpen(false)}>Home</Link></li>
-          <li><Link to="/collections" onClick={() => setIsNavOpen(false)}>Collections</Link></li>
-          <li><Link to="/exhibitions" onClick={() => setIsNavOpen(false)}>Exhibitions</Link></li>
-          <li><Link to="/visit" onClick={() => setIsNavOpen(false)}>Visit</Link></li>
-          <li><Link to="/contact" onClick={() => setIsNavOpen(false)}>Contact</Link></li>
+          <li><NavLink to="/" end onClick={() => setIsNavOpen(false)}>Home</NavLink></li>
+          <li><NavLink to="/collections" onClick={() => setIsNavOpen(false)}>Collections</NavLink></li>
+          <li><NavLink to="/exhibitions" onClick={() => setIsNavOpen(false)}>Exhibitions</NavLink></li>
+          <li><NavLink to="/visit" onClick={() => setIsNavOpen(false)}>Visit</NavLink></li>
+          <li><NavLink to="/contact" onClick={() => setIsNavOpen(false)}>Contact</NavLink></li>
         </ul>
       </nav>
     </header>
