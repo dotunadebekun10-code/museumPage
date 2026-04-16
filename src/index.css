@@ -299,7 +299,6 @@ section h3::after {
   transition: var(--transition);
   backdrop-filter: blur(10px);
   position: relative;
-  group: hover;
 }
 
 .grid article:hover {
@@ -425,6 +424,8 @@ section h3::after {
 }
 
 .map-container iframe {
+  width: 100%;
+  height: 400px;
   filter: invert(90%) hue-rotate(180deg) contrast(100%);
   transition: var(--transition);
 }
