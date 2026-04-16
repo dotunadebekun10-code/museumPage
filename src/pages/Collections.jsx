@@ -1,0 +1,131 @@
+import React from 'react';
+import { Landmark, Globe, Palette } from 'lucide-react';
+
+const Collections = () => {
+  return (
+    <main>
+      <section className="page-header">
+        <h2>Our Collections</h2>
+        <p>
+          Immerse yourself in a vibrant collection of stunning masterpieces, created by talented artists from around the world. Discover a diverse range of styles and themes—from cultural and abstract art to modern international pieces. Whether you're an art enthusiast or simply seeking inspiration, explore a world where creativity knows no bounds.
+        </p>
+      </section>
+
+      <section className="collection-section">
+        <h3 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+          <Landmark size={32} /> Home Art (Sculptures)
+        </h3>
+        <div className="grid">
+          <article>
+            <img src="/benin-mask.jpeg" alt="Benin Mask" />
+            <h4>Benin Mask</h4>
+            <p>Iconic Edo carving symbolizing Nigerian royal heritage. The Benin ivory mask is a renowned sculptural portrait of Queen Idia, mother of Oba Esigie, and a masterpiece of 16th-century African art.</p>
+          </article>
+          <article>
+            <img src="/ife-bronze.jpeg" alt="Ife Bronze Head" />
+            <h4>Ife Bronze Head</h4>
+            <p>Naturalistic Yoruba bronze from the 12th–15th century, believed to depict rulers of Ife. These heads remain some of Africa’s greatest sculptural achievements.</p>
+          </article>
+          <article>
+            <img src="/nokTerracotta.jpeg" alt="Nok Terracotta" />
+            <h4>Nok Terracotta</h4>
+            <p>Over 2,000 years old, Nok terracottas are among the earliest sub-Saharan artworks, famous for their intricate hairstyles and stylized features.</p>
+          </article>
+          <article>
+            <img src="/amodaSculpture.jpeg" alt="Olu Amoda Sculpture" />
+            <h4>Olu Amoda's Sculpture</h4>
+            <p>Contemporary works created from repurposed materials like bolts and scrap metal, addressing themes of urban life, society, and culture.</p>
+          </article>
+          <article>
+            <img src="/TadaJebba-bronze.jpeg" alt="Tada Jebba Bronze Figures" />
+            <h4>Tada & Jebba Bronze Figures</h4>
+            <p>Rare bronze and copper figures linked to Nupe Kingdom legends. These pieces reveal a blend of Ife and Benin influences with a unique local style.</p>
+          </article>
+          <article>
+            <img src="/sangoStaff.jpeg" alt="Yoruba Sango Staffs" />
+            <h4>Yoruba Sango Staffs</h4>
+            <p>Oshe Sango staffs carved with double-axe motifs, symbolizing thunderbolts. Often carried in ceremonies for Sango, the Yoruba deity of thunder.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="collection-section">
+        <h3 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+          <Globe size={32} /> International Art
+        </h3>
+        <div className="grid">
+          <article>
+            <img src="/monaLisa-painting.jpg" alt="Mona Lisa Painting" />
+            <h4>Mona Lisa</h4>
+            <p>Leonardo da Vinci’s masterpiece (1503–1519), famed for its enigmatic smile and subtle realism. One of the most recognized works of art worldwide.</p>
+          </article>
+          <article>
+            <img src="/starryNight.jpeg" alt="Starry Night Painting" />
+            <h4>Starry Night</h4>
+            <p>Vincent van Gogh’s swirling night sky (1889), painted from his asylum room window. A vivid expression of emotion through color and form.</p>
+          </article>
+          <article>
+            <img src="/lastSupper.jpeg" alt="The Last Supper" />
+            <h4>The Last Supper</h4>
+            <p>Leonardo da Vinci’s mural (late 1400s) capturing the dramatic moment after Jesus announces his betrayal among the apostles.</p>
+          </article>
+          <article>
+            <img src="/createAdam.jpeg" alt="The Creation of Adam" />
+            <h4>The Creation of Adam</h4>
+            <p>Michelangelo’s Sistine Chapel fresco (1512), depicting God’s spark of life reaching Adam — one of the most iconic images in art.</p>
+          </article>
+          <article>
+            <img src="/THE SCREAM(1893).JPG" alt="The Scream" />
+            <h4>The Scream</h4>
+            <p>Edvard Munch’s haunting painting (1893), symbolizing modern human anxiety with its tormented figure and blood-red sky.</p>
+          </article>
+          <article>
+            <img src="/guernica.jpeg" alt="Guernica by Picasso" />
+            <h4>Guernica</h4>
+            <p>Pablo Picasso’s monumental protest painting (1937), depicting the horrors of war with a fragmented Cubist style.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="collection-section">
+        <h3 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+          <Palette size={32} /> Abstract Art
+        </h3>
+        <div className="grid">
+          <article>
+            <img src="/compostion VII.jpeg" alt="Composition VII" />
+            <h4>Composition VII</h4>
+            <p>Wassily Kandinsky’s chaotic, colorful masterpiece (1913), a landmark of pure abstraction expressing emotion through form and color.</p>
+          </article>
+          <article>
+            <img src="/no 5 img.jpeg" alt="No. 5, 1948 by Pollock" />
+            <h4>No. 5, 1948</h4>
+            <p>Jackson Pollock’s drip painting (1948), showcasing Abstract Expressionism through energetic layers of paint.</p>
+          </article>
+          <article>
+            <img src="/redyellow painting.jpeg" alt="Mondrian Composition with Red, Blue and Yellow" />
+            <h4>Composition with Red, Blue and Yellow</h4>
+            <p>Piet Mondrian’s 1930 grid-based abstract using pure primary colors and strict geometry to explore harmony.</p>
+          </article>
+          <article>
+            <img src="/black square painting.jpeg" alt="Black Square by Malevich" />
+            <h4>Black Square</h4>
+            <p>Kazimir Malevich’s Suprematist icon (1915) — a radical statement on pure form and the “zero point” of painting.</p>
+          </article>
+          <article>
+            <img src="/blackngrey.jpeg" alt="Black on Grey by Rothko" />
+            <h4>Black on Grey</h4>
+            <p>Mark Rothko’s somber late painting (1969), using color fields to evoke contemplation and deep human emotion.</p>
+          </article>
+          <article>
+            <img src="/7adulthood.jpeg" alt="The Ten Largest, No.7, Adulthood" />
+            <h4>No. 7, Adulthood</h4>
+            <p>Hilma af Klint’s monumental work (1907), representing life’s stages with biomorphic shapes and vibrant colors.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Collections;
