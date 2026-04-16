@@ -87,8 +87,9 @@ header h1 {
   font-size: 2rem;
   font-style: italic;
   font-weight: 700;
-  background: linear-gradient(135deg, #facc15, #d4af37);
+  background: linear-gradient(135deg, #facc15, #d5bb6386);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
 }
@@ -200,6 +201,7 @@ main {
   text-transform: uppercase;
   background: linear-gradient(to right, #fff, #a3a3a3);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slideUp 1s 0.2s both;
 }
